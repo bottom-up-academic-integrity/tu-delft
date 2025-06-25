@@ -6,50 +6,6 @@
 
 body {margin: 0; background-color: #f0f0f0; color: var(--main-blue); font-family: Arial, Helvetica, sans-serif;}
 
-header {
-    color: #fafafa;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    
-    width: calc(100vw - 2*var(--side-margin-content));
-    margin:28px var(--side-margin-content) 0 var(--side-margin-content);
-    padding: 10px 0;
-
-    border-bottom: 1px solid #fafafa;
-    position: absolute;
-    top:0;
-    left:0;
-    z-index: 1;
-}
-
-header #orgname {
-    font-weight: bold;
-    white-space: nowrap;
-}
-
-#navbar {
-    display: flex;
-    width: 100%;
-    margin: 0 20px;
-}
-
-.nav-item{
-    padding: 5px;
-    margin:5px;
-    cursor: pointer;
-}
-
-#contact {
-    display: flex;
-    align-items: center;
-
-    cursor: pointer;
-    white-space: nowrap;
-    border-radius: 30px;
-    background-color: rgba(0,0,0,0.2);
-    padding: 12px 13px 11px 16px;
-}
 
 #opening-graphic {
     position: relative
@@ -88,7 +44,7 @@ header #orgname {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 20px;
-    height: 500px;
+    /* height: 500px; */
 
     margin: 0 auto;
     /* background-color: rgba(0,0,0,0.1); */
@@ -138,35 +94,6 @@ card #action {
 #card-members {
     grid-row: 3 / span 2;
     grid-column: 2;
-}
-
-
-footer {
-    margin-top: 10px;
-    display: flex;
-    width: 100vw;
-    background-color: #222222;
-    justify-content: space-around;
-
-    color: #fafafa;
-    font-family: Arial, Helvetica, sans-serif;
-    min-height: 150px;
-}
-
-footer #short-text {
-    width: 25%;
-    margin: 30px;
-    color: rgba(255,255,255,0.5);;
-}
-
-footer button {
-    margin: 30px;
-    height: 20px;
-    cursor: pointer;
-    padding: 8px 8px 25px 8px;
-    color: rgba(255,255,255,0.5);
-    border: 1px solid rgba(255,255,255,0.5);
-    border-radius: 7px;
 }
 
 button, input[type="submit"], input[type="reset"] {
