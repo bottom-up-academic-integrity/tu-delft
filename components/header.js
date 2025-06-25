@@ -64,6 +64,45 @@ headerTemplate.innerHTML = `
   .bubble-button span{
     margin-left: 4px;
   }
+
+  @media only screen and (max-width: 480px) {
+    header {
+        flex-direction:column;
+        align-items:flex-start;
+        margin:22px var(--side-margin-content) 0 var(--side-margin-content);
+        padding-bottom: 10px;
+    }
+
+    header #orgname {
+        font-size: 1.4em;
+    }
+
+    #navbar {
+        margin: 5px 0;
+    }
+
+    .nav-item {
+        padding-left: 12px;
+        padding-right: 20px;
+        margin-left:0;
+    }
+
+    #actionbuttons {
+        display: dfff;
+    }
+
+    .bubble-button {
+        padding:4px 14px;
+        margin-left: 0px;
+        margin-right: 6px;
+        background-color: rgba(0,0,0,0.3);
+    }
+
+    .showmobile {display: block}
+    .hidemobile {display: none}
+  
+  
+  }
   </style>
   <header>
   <div id="orgname" onclick="window.location.href='/'">TU Delft Bottom-Up Integrity</div>
@@ -74,7 +113,8 @@ headerTemplate.innerHTML = `
   </div>
   <div id="actionbuttons">
       <div id="endorsement" class="bubble-button" onclick="window.open('mailto:tobias.verkerk@proton.me')">
-        <div>Endorse our Message</div>
+        <div class="hidemobile">Endorse our Message</div>
+        <div class="showmobile">Endorse Us</div>
         <span class="material-symbols-outlined" style="padding: 2px;">
             volunteer_activism
         </span>

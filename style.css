@@ -104,3 +104,26 @@ button, input[type="submit"], input[type="reset"] {
 	font: inherit;
 	outline: inherit;
 }
+
+@media only screen and (max-width: 480px) {
+    :root {
+    --side-margin-content: 24px;
+    }
+
+    @media only screen and (max-width: 480px) {
+        #opening-image {
+            height: 400px;
+            width: calc(100vw - 2*15px);
+            margin: 15px 15px;
+            border-radius: 11px
+        }
+    
+        #opening-slogan{
+            font-size: 3.5em;
+            line-height: 0.9em;
+            top:180px;
+            left:10px;
+            text-shadow: 0 0 2px rgba(0,0,0,0.3);
+        }
+    }
+}

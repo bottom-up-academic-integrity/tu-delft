@@ -31,6 +31,20 @@ footerTemplate.innerHTML = `
         border-radius: 7px;
         background-color: transparent;
     }
+
+     /* Style rules for phone  */
+  @media only screen and (max-width: 480px) {
+    footer {
+      flex-direction: column;
+    }
+
+    footer #short-text{
+      width:auto;
+      margin:20px 20px 5px 20px;
+    }
+  
+  
+  }
   </style>
     <footer>
         <div id="short-text">tudelft.forintegrity.nl is hosted under forintegrity.nl, but is independent
