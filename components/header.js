@@ -65,16 +65,20 @@ headerTemplate.innerHTML = `
     margin-left: 4px;
   }
 
+.showmobile {display: none}
+.hidemobile {display: block}
+
   @media only screen and (max-width: 480px) {
     header {
         flex-direction:column;
         align-items:flex-start;
         margin:22px var(--side-margin-content) 0 var(--side-margin-content);
-        padding-bottom: 10px;
+        padding-bottom: 12px;
     }
 
     header #orgname {
         font-size: 1.4em;
+        padding-left:10px;
     }
 
     #navbar {
@@ -105,21 +109,21 @@ headerTemplate.innerHTML = `
   }
   </style>
   <header>
-  <div id="orgname" onclick="window.location.href='/'">TU Delft Bottom-Up Integrity</div>
+  <div id="orgname" onclick="window.location.href='index.html'">TU Delft Bottom-Up Integrity</div>
   <div id="navbar">
-      <div class="nav-item" onclick="window.location.href='/'">Home</div>
+      <div class="nav-item" onclick="window.location.href='index.html'">Home</div>
       <div class="nav-item" onclick="window.location.href='output.html'">Our Deliberation</div>
       <div class="nav-item" onclick="window.location.href='about.html'">About</div>
   </div>
   <div id="actionbuttons">
       <div id="endorsement" class="bubble-button" onclick="window.open('mailto:tobias.verkerk@proton.me')">
         <div class="hidemobile">Endorse our Message</div>
-        <div class="showmobile">Endorse Us</div>
+        <div class="showmobile">Endorse Message</div>
         <span class="material-symbols-outlined" style="padding: 2px;">
             volunteer_activism
         </span>
     </div>
-    <div id="contact" class="bubble-button" onclick="window.open('mailto:tobias.verkerk@proton.me')">
+    <div id="contact" class="bubble-button" onclick="window.open('mailto:Tudelft4Pal@proton.me')">
         <div>Get in Touch</div>
         <span class="material-symbols-outlined" style="padding: 2px;">
             call_made

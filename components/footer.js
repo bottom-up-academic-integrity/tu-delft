@@ -50,7 +50,7 @@ footerTemplate.innerHTML = `
         <div id="short-text">tudelft.forintegrity.nl is hosted under forintegrity.nl, but is independent
             of other subdomains under the forintegrity.nl domain.
         </div>
-        <button onclick="window.open('mailto:tobias.verkerk@proton.me')">
+        <button onclick="window.open('mailto:Tudelft4Pal@proton.me')">
             Get in touch with us
         </button>
     </footer>
