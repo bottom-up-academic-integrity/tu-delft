@@ -6,7 +6,6 @@ footerTemplate.innerHTML = `
     footer {
         margin-top: 10px;
         display: flex;
-        width: 100vw;
         background-color: #222222;
         justify-content: space-around;
 
