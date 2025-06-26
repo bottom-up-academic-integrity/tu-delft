@@ -2,7 +2,7 @@ const headerTemplate = document.createElement('template');
 
 headerTemplate.innerHTML = `
  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=call_made"/>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20,200,0,0&icon_names=volunteer_activism" />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20,200,0,0&icon_names=volunteer_activism" />
   
   <style>
   header {
@@ -96,7 +96,7 @@ headerTemplate.innerHTML = `
     }
 
     .bubble-button {
-        padding:4px 14px;
+        padding:4px 10px 4px 14px;
         margin-left: 0px;
         margin-right: 6px;
         background-color: rgba(0,0,0,0.3);
@@ -109,11 +109,11 @@ headerTemplate.innerHTML = `
   }
   </style>
   <header>
-  <div id="orgname" onclick="window.location.href='index.html'">TU Delft Bottom-Up Integrity</div>
+  <div id="orgname" onclick="window.location.href='/index.html'">TU Delft Bottom-Up Integrity</div>
   <div id="navbar">
-      <div class="nav-item" onclick="window.location.href='index.html'">Home</div>
-      <div class="nav-item" onclick="window.location.href='output.html'">Our Deliberation</div>
-      <div class="nav-item" onclick="window.location.href='about.html'">About</div>
+      <div class="nav-item" onclick="window.location.href='/index.html'">Home</div>
+      <div class="nav-item" onclick="window.location.href='/output/2025-moral-deliberation-detailed-report.html'">Our Deliberation</div>
+      <div class="nav-item" onclick="window.location.href='/about.html'">About</div>
   </div>
   <div id="actionbuttons">
       <div id="endorsement" class="bubble-button" onclick="window.open('https://forms.office.com/e/qYGAxbVee1')">
