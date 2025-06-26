@@ -116,7 +116,7 @@ headerTemplate.innerHTML = `
       <div class="nav-item" onclick="window.location.href='about.html'">About</div>
   </div>
   <div id="actionbuttons">
-      <div id="endorsement" class="bubble-button" onclick="window.open('mailto:tobias.verkerk@proton.me')">
+      <div id="endorsement" class="bubble-button" onclick="window.open('https://forms.office.com/e/qYGAxbVee1')">
         <div class="hidemobile">Endorse our Message</div>
         <div class="showmobile">Endorse Message</div>
         <span class="material-symbols-outlined" style="padding: 2px;">
