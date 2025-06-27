@@ -38,7 +38,7 @@ body {margin: 0; background-color: #f0f0f0; color: var(--main-blue); font-family
 }
 
 #homepage-document{
-    top: -300px;
+    top: -20vh;
     position: relative;
 }
 
