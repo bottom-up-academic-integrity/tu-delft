@@ -8,7 +8,7 @@ documentTemplate.innerHTML = `
 <style>
 #document {
   font-size: 1.05em;
-  max-width: 80ch;
+  max-width: 75ch;
   margin: 0 auto 50px auto;
   background-color: #fafafa;
   padding: 40px 80px;
