@@ -7,17 +7,19 @@ documentTemplate.innerHTML = `
 
 <style>
 #document {
-    font-size: 1.05em;
-    max-width: 80ch;
-    margin: 0 auto 50px auto;
-    background-color: #fafafa;
-    padding: 40px 80px;
+  font-size: 1.05em;
+  max-width: 80ch;
+  margin: 0 auto 50px auto;
+  background-color: #fafafa;
+  padding: 40px 80px;
 
-    color: var(--text-blue); /* darker version of --main-blue */
-    filter:drop-shadow(0px 2px 2px #9e9e9e);
+  color: var(--text-blue); /* darker version of --main-blue */
+  filter:drop-shadow(0px 2px 2px #9e9e9e);
 
-    font-family: "Atkinson Hyperlegible", sans-serif;
-    font-weight: 400;
+  font-family: "Atkinson Hyperlegible", sans-serif;
+  font-weight: 400;
+
+  line-height: 1.5em;
 }
 
 #document #title{
@@ -26,7 +28,7 @@ documentTemplate.innerHTML = `
     font-family: "Cal Sans", sans-serif;
     font-weight: 400;
     font-style: normal;
-    line-height:0.9em;
+    line-height:1em;
     margin: 10px 0 20px 0;
 }
 
@@ -46,13 +48,14 @@ documentTemplate.innerHTML = `
   opacity: 20%;
 }
 
-#document #content{
-  margin-top:15px
+#document #body-content{
+  margin-top:15px;
 }
 
 #document h2 {
-    line-height: 1em;
+    line-height: 1.5em;
 }
+
 
 
 a.action-button {
@@ -87,7 +90,7 @@ a.action-button:hover {
 #document {
     font-size: 1em;
     margin: 0 auto 5px auto;
-    padding: 30px 22px;
+    padding: 30px 16px;
     filter: none; */
 }
 
@@ -100,11 +103,6 @@ a.action-button:hover {
     font-size: 1.5em;
     line-height: 1.1em;
     margin: 0 0 7px 0;
-}
-
-#document #content{
-    font-family: "Atkinson Hyperlegible", sans-serif;
-    font-weight: 400;
 }
 }
 </style>
@@ -119,9 +117,9 @@ a.action-button:hover {
     <div id="date">
       <slot name="date"></slot>
     </div>
-    <div id="content">
+    <div id="body-content">
       <!-- converted using https://text-html.com/ -->
-      <slot name="content"></slot>
+      <slot name="body-content"></slot>
       <slot></slot>
     </div>
     <div id="call-to-action">
