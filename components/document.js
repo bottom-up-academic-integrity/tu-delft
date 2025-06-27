@@ -125,6 +125,9 @@ a.action-button:hover {
     <div id="call-to-action">
       <slot name="buttons"></slot>
     </div>
+    <div id="author-list">
+      <slot name="authors"></slot>
+    </div>
 </div> 
 
 `;
