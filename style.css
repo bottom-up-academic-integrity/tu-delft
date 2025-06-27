@@ -7,8 +7,8 @@
 
 body {margin: 0; background-color: #f0f0f0; color: var(--main-blue); font-family: Arial, Helvetica, sans-serif;}
 
-hr {border-color: var(--text-blue);}
-
+/* temporary */
+.action-button .material-symbols-outlined { display:none}
 
 #opening-graphic {
     position: relative

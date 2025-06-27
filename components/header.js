@@ -5,6 +5,10 @@ headerTemplate.innerHTML = `
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20,200,0,0&icon_names=volunteer_activism" />
   
   <style>
+
+  /* temporary */
+  #actionbuttons .material-symbols-outlined { display:none}
+
   header {
       color: #fafafa;
       display: flex;
