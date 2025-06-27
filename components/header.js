@@ -1,13 +1,8 @@
 const headerTemplate = document.createElement('template');
 
 headerTemplate.innerHTML = `
- <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=call_made"/>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20,200,0,0&icon_names=volunteer_activism" />
-  
-  <style>
 
-  /* temporary */
-  #actionbuttons .material-symbols-outlined { display:none}
+  <style>
 
   header {
       color: #fafafa;
@@ -69,6 +64,13 @@ headerTemplate.innerHTML = `
     margin-left: 4px;
   }
 
+  .bubble-button .icon {
+    margin-left:5px;
+    width: 1em;
+    height: 1em;
+    background-color: #fafafa;
+  }
+
 .showmobile {display: none}
 .hidemobile {display: block}
 
@@ -95,12 +97,8 @@ headerTemplate.innerHTML = `
         margin-left:0;
     }
 
-    #actionbuttons {
-        display: dfff;
-    }
-
     .bubble-button {
-        padding:4px 10px 4px 14px;
+        padding:7px 11px 7px 14px;
         margin-left: 0px;
         margin-right: 6px;
         background-color: rgba(0,0,0,0.3);
@@ -123,15 +121,11 @@ headerTemplate.innerHTML = `
       <div id="endorsement" class="bubble-button" onclick="window.open('https://forms.office.com/e/qYGAxbVee1')">
         <div class="hidemobile">Endorse our Message</div>
         <div class="showmobile">Endorse Message</div>
-        <span class="material-symbols-outlined" style="padding: 2px;">
-            volunteer_activism
-        </span>
+        <div class="icon" style="font-size: 1.5em; -webkit-mask: url(/icons/volunteer_activism_24dp_1F1F1F_FILL0_wght300_GRAD0_opsz24.svg) no-repeat center;"></div>
     </div>
     <div id="contact" class="bubble-button" onclick="window.open('mailto:Tudelft4Pal@proton.me')">
         <div>Get in Touch</div>
-        <span class="material-symbols-outlined" style="padding: 2px;">
-            call_made
-        </span>
+        <div class="icon" style="font-size: 1.5em; -webkit-mask: url(/icons/call_made_24dp_1F1F1F_FILL0_wght300_GRAD0_opsz24.svg) no-repeat center;"></div>
     </div>
   </div>
   </header>

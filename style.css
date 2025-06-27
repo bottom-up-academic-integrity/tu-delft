@@ -7,9 +7,6 @@
 
 body {margin: 0; background-color: #f0f0f0; color: var(--main-blue); font-family: Arial, Helvetica, sans-serif;}
 
-/* temporary */
-.action-button .material-symbols-outlined { display:none}
-
 #opening-graphic {
     position: relative
 }
@@ -72,6 +69,13 @@ a.action-button {
 
 a.action-button:hover {
     background-color: rgba(0,0,0,0.1);
+}
+
+a.action-button .icon{
+    margin-left:2px;
+    width: 1em;
+    height: 1em;
+    background-color: var(--text-blue);
 }
 
 
