@@ -1,6 +1,10 @@
 const bannerTemplate = document.createElement('template');
 
 bannerTemplate.innerHTML = `
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cal+Sans&display=swap" rel="stylesheet">
+
   <style>
     #opening-graphic {
         position: relative
@@ -11,7 +15,7 @@ bannerTemplate.innerHTML = `
         width: calc(100vw - 2*25px);
         height: 300px;
         margin: 20px 25px;
-        background-image: url("https://filelist.tudelft.nl/_processed_/b/0/csm_TU%20Delft%20Library%20headerafbeelding%20-%20zomer_10f4ed2618.webp");
+        background-image: url("../media/13026177-9ebf-4bad-bd69-9b232a638f72.webp");
         background-size: cover;
         background-position: center;
         filter: url(#duotone-deep-blue-white);        
@@ -21,7 +25,9 @@ bannerTemplate.innerHTML = `
         display:block;
         font-size: 5em;
         line-height: 0.8em;
-        font-weight: bold;
+        font-family: "Cal Sans", sans-serif;
+        font-weight: 400;
+        font-style: normal;
 
         color: #fafafa;
 
@@ -31,6 +37,7 @@ bannerTemplate.innerHTML = `
 
         margin: 30px;
         text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+
     }
 
     @media only screen and (max-width: 480px) {
@@ -47,6 +54,8 @@ bannerTemplate.innerHTML = `
             top:150px;
             left:10px;
             text-shadow: 0 0 8px rgba(0,0,0,0.7);
+
+            
         }
     
     
@@ -72,7 +81,7 @@ bannerTemplate.innerHTML = `
           />
       
           <feComponentTransfer color-interpolation-filters="sRGB" in="grayscale">
-            <feFuncR type="table" tableValues="0 1" />
+            <feFuncR type="table" tableValues="0 0.92" />
             <feFuncG type="table" tableValues="0 1" />
             <feFuncB type="table" tableValues="0.627 1" />
             <feFuncA type="identity" />
