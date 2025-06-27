@@ -15,7 +15,7 @@ bannerTemplate.innerHTML = `
         width: calc(100vw - 2*25px);
         height: 300px;
         margin: 20px 25px;
-        background-image: url("../media/13026177-9ebf-4bad-bd69-9b232a638f72.webp");
+        background-image: url("/media/13026177-9ebf-4bad-bd69-9b232a638f72.webp");
         background-size: cover;
         background-position: center;
         filter: url(#duotone-deep-blue-white);        
