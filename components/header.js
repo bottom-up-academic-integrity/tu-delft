@@ -11,7 +11,7 @@ headerTemplate.innerHTML = `
       align-items: center;
       
       width: calc(100vw - 2*var(--side-margin-content));
-      margin:28px var(--side-margin-content) 0 var(--side-margin-content);
+      margin:26px var(--side-margin-content) 0 var(--side-margin-content);
       padding: 10px 0;
 
       border-bottom: 1px solid #fafafa;
@@ -83,7 +83,7 @@ headerTemplate.innerHTML = `
     }
 
     header #orgname {
-        font-size: 1.4em;
+        height: auto;
         padding-left:10px;
     }
 
@@ -111,7 +111,7 @@ headerTemplate.innerHTML = `
   }
   </style>
   <header>
-  <div id="orgname" onclick="window.location.href='/index.html'">TU Delft Bottom-Up Integrity</div>
+  <div id="orgname" onclick="window.location.href='/index.html'"><img src="/media/logo-tudelft-for-integrity.png" style="height:4.5em;"></div>
   <div id="navbar">
       <div class="nav-item" onclick="window.location.href='/index.html'">Home</div>
       <div class="nav-item" onclick="window.location.href='/output/2025-our-moral-deliberation.html'">Our Deliberation</div>

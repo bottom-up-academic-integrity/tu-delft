@@ -51,7 +51,7 @@ bannerTemplate.innerHTML = `
         #banner-text{
             font-size: 3em;
             line-height: 0.9em;
-            top:150px;
+            top:180px;
             left:10px;
             text-shadow: 0 0 8px rgba(0,0,0,0.7);
 
