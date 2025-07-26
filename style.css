@@ -43,7 +43,7 @@ body {margin: 0; background-color: #f0f0f0; color: var(--main-blue); font-family
 }
 
 
-a.action-button {
+.actionbuttons a {
     width: fit-content;
 
     
@@ -58,20 +58,15 @@ a.action-button {
     border-radius: 30px;
     border: solid 2px var(--main-blue);
     padding: 10px 16px 11px 16px;
-
+    margin-right: 10px;
     font-weight: bold;
 }
 
-.action-button span {
-    font-weight: bold;
-    font-size: 1.5em;
-}
-
-a.action-button:hover {
+.actionbuttons a:hover {
     background-color: rgba(0,0,0,0.1);
 }
 
-a.action-button .icon{
+.actionbuttons a .icon{
     margin-left:2px;
     width: 1em;
     height: 1em;

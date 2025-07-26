@@ -56,34 +56,9 @@ documentTemplate.innerHTML = `
     line-height: 1.5em;
 }
 
-
-
-a.action-button {
-    width: fit-content;
-
-    
-    color:inherit;
-    text-decoration: none;
-
-    display: flex;
-    align-items: center;
-
-    cursor: pointer;
-    white-space: nowrap;
-    border-radius: 30px;
-    border: solid 2px var(--main-blue);
-    padding: 10px 16px 11px 16px;
-
-    font-weight: bold;
-}
-
-.action-button span {
-    font-weight: bold;
-    font-size: 1.5em;
-}
-
-a.action-button:hover {
-    background-color: rgba(0,0,0,0.1);
+::slotted(.actionbuttons) {
+  display: flex;
+  flex-wrap: wrap;
 }
             
 @media only screen and (max-width: 480px) {
