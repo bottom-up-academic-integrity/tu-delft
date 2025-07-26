@@ -1,0 +1,6 @@
+[submodule "documents/source/document-open-letter-2025"]
+	path = documents/source/document-open-letter-2025
+	url = git@github.com:bottom-up-academic-integrity/document-open-letter-2025.git
+[submodule "documents/source/document-our-deliberation-2025"]
+	path = documents/source/document-our-deliberation-2025
+	url = git@github.com:bottom-up-academic-integrity/document-our-deliberation-2025.git
