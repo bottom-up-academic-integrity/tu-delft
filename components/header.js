@@ -123,7 +123,7 @@ headerTemplate.innerHTML = `
         <div class="showmobile">Endorse Message</div>
         <div class="icon" style="font-size: 1.5em; -webkit-mask: url(/icons/volunteer_activism_24dp_1F1F1F_FILL0_wght300_GRAD0_opsz24.svg) no-repeat center;"></div>
     </div>
-    <div id="contact" class="bubble-button" onclick="window.open('mailto:Tudelft4Pal@proton.me')">
+    <div id="contact" class="bubble-button" onclick="window.open('https://forms.office.com/e/5zrfcJS70Z')">
         <div>Get in Touch</div>
         <div class="icon" style="font-size: 1.5em; -webkit-mask: url(/icons/call_made_24dp_1F1F1F_FILL0_wght300_GRAD0_opsz24.svg) no-repeat center;"></div>
     </div>
