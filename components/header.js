@@ -7,6 +7,7 @@ headerTemplate.innerHTML = `
   header {
       color: #fafafa;
       display: flex;
+      flex-wrap: wrap;
       justify-content: space-between;
       align-items: center;
       
@@ -29,8 +30,7 @@ headerTemplate.innerHTML = `
 
   #navbar {
       display: flex;
-      width: 100%;
-      margin: 0 20px;
+      margin: 0 auto 0 20px;
   }
 
   .nav-item{
@@ -42,6 +42,7 @@ headerTemplate.innerHTML = `
   #actionbuttons {
       display: flex;
       align-items: center;
+      margin: 3px 0;
   }
 
   .bubble-button {
@@ -114,13 +115,13 @@ headerTemplate.innerHTML = `
   <div id="orgname" onclick="window.location.href='/index.html'"><img src="/media/logo-tudelft-for-integrity.png" style="height:4.5em;"></div>
   <div id="navbar">
       <div class="nav-item" onclick="window.location.href='/index.html'">Home</div>
-      <div class="nav-item" onclick="window.location.href='/output/2025-our-moral-deliberation.html'">Our Deliberation</div>
+      <div class="nav-item" onclick="window.location.href='/output/2025-our-moral-deliberation.html'">Our&nbsp;Deliberation</div>
       <div class="nav-item" onclick="window.location.href='/about.html'">About</div>
   </div>
   <div id="actionbuttons">
       <div id="endorsement" class="bubble-button" onclick="window.open('https://forms.office.com/e/qYGAxbVee1')">
-        <div class="hidemobile">Endorse our Message</div>
-        <div class="showmobile">Endorse Message</div>
+        <div class="hidemobile">Endorse&nbsp;our&nbsp;Message</div>
+        <div class="showmobile">Endorse&nbsp;Message</div>
         <div class="icon" style="font-size: 1.5em; -webkit-mask: url(/icons/volunteer_activism_24dp_1F1F1F_FILL0_wght300_GRAD0_opsz24.svg) no-repeat center;"></div>
     </div>
     <div id="contact" class="bubble-button" onclick="window.open('https://forms.office.com/e/5zrfcJS70Z')">
