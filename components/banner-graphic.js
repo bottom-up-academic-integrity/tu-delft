@@ -42,7 +42,7 @@ bannerTemplate.innerHTML = `
 
     @media only screen and (max-width: 480px) {
         #opening-image {
-            height: 280px;
+            height: 320px;
             width: calc(100vw - 2*15px);
             margin: 15px 15px;
             border-radius: 11px
@@ -51,7 +51,7 @@ bannerTemplate.innerHTML = `
         #banner-text{
             font-size: 3em;
             line-height: 0.9em;
-            top:180px;
+            top:232px;
             left:10px;
             text-shadow: 0 0 8px rgba(0,0,0,0.7);
 

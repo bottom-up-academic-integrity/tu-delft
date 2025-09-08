@@ -43,6 +43,8 @@ headerTemplate.innerHTML = `
       display: flex;
       align-items: center;
       margin: 3px 0;
+      flex-wrap: wrap;
+      gap: 6px 0;
   }
 
   .bubble-button {
@@ -102,7 +104,7 @@ headerTemplate.innerHTML = `
         padding:7px 11px 7px 14px;
         margin-left: 0px;
         margin-right: 6px;
-        background-color: rgba(0,0,0,0.3);
+        background-color: rgba(0,0,0,0.6);
     }
 
     .showmobile {display: block}
@@ -119,13 +121,19 @@ headerTemplate.innerHTML = `
       <div class="nav-item" onclick="window.location.href='/about.html'">About</div>
   </div>
   <div id="actionbuttons">
-      <div id="endorsement" class="bubble-button" onclick="window.open('https://forms.office.com/e/qYGAxbVee1')">
-        <div class="hidemobile">Endorse&nbsp;our&nbsp;Message</div>
-        <div class="showmobile">Endorse&nbsp;Message</div>
-        <div class="icon" style="font-size: 1.5em; -webkit-mask: url(/icons/volunteer_activism_24dp_1F1F1F_FILL0_wght300_GRAD0_opsz24.svg) no-repeat center;"></div>
+    <div id="complaint" class="bubble-button" onclick="window.location.href='/actions/complaint-form.html'">
+        <div class="hidemobile">Report&nbsp;an&nbsp;Incident</div>
+        <div class="showmobile">Report</div>
+        <div class="icon" style="font-size: 1.5em; -webkit-mask: url(/icons/fmd_bad_24dp_1F1F1F_FILL0_wght300_GRAD0_opsz24.svg) no-repeat center;"></div>
+      </div>
+    <div id="endorsement" class="bubble-button" onclick="window.open('https://forms.office.com/e/qYGAxbVee1')">
+      <div class="hidemobile">Endorse&nbsp;our&nbsp;Message</div>
+      <div class="showmobile">Endorse</div>
+      <div class="icon" style="font-size: 1.5em; -webkit-mask: url(/icons/volunteer_activism_24dp_1F1F1F_FILL0_wght300_GRAD0_opsz24.svg) no-repeat center;"></div>
     </div>
     <div id="contact" class="bubble-button" onclick="window.open('https://forms.office.com/e/5zrfcJS70Z')">
-        <div>Get in Touch</div>
+      <div class="hidemobile">Get&nbsp;in&nbsp;Touch</div>
+      <div class="showmobile">Contact</div>
         <div class="icon" style="font-size: 1.5em; -webkit-mask: url(/icons/call_made_24dp_1F1F1F_FILL0_wght300_GRAD0_opsz24.svg) no-repeat center;"></div>
     </div>
   </div>
