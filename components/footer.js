@@ -46,8 +46,9 @@ footerTemplate.innerHTML = `
   }
   </style>
     <footer>
-        <div id="short-text">tudelft.forintegrity.nl is hosted under forintegrity.nl, but is independent
-            of other subdomains under the forintegrity.nl domain.
+        <div id="short-text">TU Delft for Integrity is a grassroots initiative composed of academic staff, researchers and students. It is not organised, run by, or formally represent the TU Delft.
+        <br><br>     
+        tudelft.forintegrity.nl is independent of other subdomains under the forintegrity.nl domain.
         </div>
         <button onclick="window.open('https://forms.office.com/e/5zrfcJS70Z')">
             Get in touch with us
