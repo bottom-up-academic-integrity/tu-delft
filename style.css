@@ -19,22 +19,45 @@ body {margin: 0; background-color: #f0f0f0; color: var(--main-blue); font-family
     background-image: url("media/13026177-9ebf-4bad-bd69-9b232a638f72.webp");
     background-size: cover;
     filter: url(#duotone-deep-blue-white);
+    
 }
 
 #opening-slogan {
-    font-size: 7em;
     font-family: "Cal Sans", sans-serif;
     font-weight: 400;
     font-style: normal;
-    line-height: 0.8em;
 
     color: #fafafa;
 
     position: absolute;
-    top: 30vh;
+    top: 24vh;
     left:50px;
 
     margin: 30px;
+    max-width: 10ch;
+    font-size: 7em;
+    line-height: 0px;
+}
+
+#opening-slogan #title{
+    line-height: 0.85em;
+    letter-spacing: 3px;
+    margin-bottom: 16px;
+}
+
+#opening-slogan #subtitle{
+    margin: 0px 0 0 0.6rem;
+    font-size: 1.3rem;
+    letter-spacing: 3px;
+}
+
+#opening-slogan #subtitle {
+    line-height: 40px;
+    display: inline;
+    padding: 0.4rem 0 0.5rem;
+    background: color-mix(in srgb, var(--text-blue) 80%, transparent);
+    z-index: 5;
+    box-shadow: .6em 0 0 color-mix(in srgb, var(--text-blue) 80%, transparent), -.6em 0 0 color-mix(in srgb, var(--text-blue) 80%, transparent);
 }
 
 #homepage-document{
@@ -112,6 +135,12 @@ button, input[type="submit"], input[type="reset"] {
     --side-margin-content: 24px;
     }
 
+    #opening-slogan #subtitle {
+    position: relative;
+    }
+
+
+
     #opening-image {
         height: 400px;
         width: calc(100vw - 2*15px);
@@ -120,11 +149,31 @@ button, input[type="submit"], input[type="reset"] {
     }
 
     #opening-slogan{
-        font-size: 3.5em;
-        line-height: 0.9em;
-        top:240px;
-        left:10px;
+        top:200px;
+        left:0px;
+    }
+
+    /* hide on mobile */
+    #opening-slogan #title{
+        display: none;
+    }
+
+    #opening-slogan #subtitle{
+        z-index: 0;
+        font-size: 1.4rem;
+        /* line-height: 1.6rem;; */
         text-shadow: 0 0 2px rgba(0,0,0,0.3);
+        letter-spacing: 1px;
+    }
+
+    /* text effect */
+    #opening-slogan #subtitle {
+        line-height: 8px;
+        font-size: 1.2rem;
+        padding: .1rem 0 0.3rem ;
+        background: color-mix(in srgb, var(--text-blue) 80%, transparent);
+        z-index: 5;
+        box-shadow: .6em 0 0 color-mix(in srgb, var(--text-blue) 80%, transparent), -.6em 0 0 color-mix(in srgb, var(--text-blue) 80%, transparent);
     }
 
     .padding-box {
