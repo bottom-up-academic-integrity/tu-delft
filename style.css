@@ -37,7 +37,7 @@ body {margin: 0; background-color: #f0f0f0; color: var(--main-blue); font-family
     margin: 30px;
 }
 
-#homepage-document{
+.homepage-document{
     top: -20vh;
     position: relative;
 }
@@ -131,7 +131,7 @@ button, input[type="submit"], input[type="reset"] {
         margin: 0 13px;
     }
 
-    #homepage-document{
+    .homepage-document{
         top: 0;
     }
 

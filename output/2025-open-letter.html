@@ -19,6 +19,8 @@
     <script src="../components/header.js" type="text/javascript" defer></script>
     <script src="../components/banner-graphic.js" type="text/javascript" defer></script>
     <script src="../components/footer.js" type="text/javascript" defer></script>
+    <script src="../components/endorsement-list.js" type="text/javascript" defer></script>
+    <script src="../components/endorsement-badge.js" type="text/javascript" defer></script>
   </head>
   <body>
     <header-component></header-component>
@@ -30,6 +32,7 @@
             <span slot="title">TU Delft for Integrity: Open Letter</span>
             <span slot="subtitle">Our response to The Moral Deliberation Advice Report: “Sensitive collaboration relating to Israel-Gaza”</span>
             <span slot="date">June 2025</span>
+            <span slot="badge"><endorsement-badge-component datasource="/community/endorsements/open-letter-endorsements.csv"></endorsement-badge-component></span>
             <span slot="body-content">
               <!-- converted using https://text-html.com/ -->
               <p>This letter is a summary of our response to TU Delft&rsquo;s Moral Deliberation outcome and process regarding <strong>TU Delft&rsquo;s institutional collaborations with Israeli entities implicated in war crimes, apartheid, and plausible genocide, as identified in the context of the Israel-Gaza conflict.</strong> For a deeper analysis of the process, its ethical shortcomings, and what a responsible alternative should look like, we invite you to <a href="/output/2025-our-moral-deliberation.html">read the full document</a>.</p>
@@ -79,8 +82,9 @@
               <p><strong>Kritika </strong><strong>Maheshwari</strong><strong>,</strong><em> Assistant Professor in Ethics and Philosophy of Technology, TU Delft</em>&nbsp;</p>
               <p><strong>Santosh Ilamparuthi,</strong><em> Data Steward at</em> <em>Faculty of Electrical Engineering, Mathematics and Computer Science, TU Delft</em></p>
             </span>
-
+            
         </document-component>
+        <endorsement-list-component datasource="/community/endorsements/open-letter-endorsements.csv"></endorsement-list-component>
     </div>
     <footer-component></footer-component>
   </body>

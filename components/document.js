@@ -9,7 +9,7 @@ documentTemplate.innerHTML = `
 #document {
   font-size: 1.05em;
   max-width: 75ch;
-  margin: 0 auto 50px auto;
+  margin: 0 auto 10px auto;
   background-color: #fafafa;
   padding: 40px 80px;
 
@@ -92,6 +92,7 @@ documentTemplate.innerHTML = `
     <div id="date">
       <slot name="date"></slot>
     </div>
+    <slot name="badge"></slot>
     <div id="body-content">
       <!-- converted using https://text-html.com/ -->
       <slot name="body-content"></slot>
