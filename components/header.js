@@ -118,7 +118,6 @@ headerTemplate.innerHTML = `
   <div id="navbar">
       <div class="nav-item" onclick="window.location.href='/index.html'">Home</div>
       <div class="nav-item" onclick="window.location.href='/output/2025-our-moral-deliberation.html'">Our&nbsp;Deliberation</div>
-      <div class="nav-item" onclick="window.location.href='/community/endorsements.html'">Endorsements</div>
       <div class="nav-item" onclick="window.location.href='/about.html'">About</div>
   </div>
   <div id="actionbuttons">
