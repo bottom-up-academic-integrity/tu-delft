@@ -31,6 +31,7 @@ headerTemplate.innerHTML = `
   #navbar {
       display: flex;
       margin: 0 auto 0 20px;
+      font-size: 17px;
   }
 
   .nav-item{
@@ -114,7 +115,7 @@ headerTemplate.innerHTML = `
   }
   </style>
   <header>
-  <div id="orgname" onclick="window.location.href='/index.html'"><img src="/media/logo-tudelft-for-integrity.png" style="height:4.5em;"></div>
+  <div id="orgname" onclick="window.location.href='/index.html'"><img src="/media/logo-tudelft-for-integrity.png" style="height:4em;"></div>
   <div id="navbar">
       <div class="nav-item" onclick="window.location.href='/index.html'">Home</div>
       <div class="nav-item" onclick="window.location.href='/output/2025-our-moral-deliberation.html'">Our&nbsp;Deliberation</div>
