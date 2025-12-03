@@ -12,7 +12,7 @@ body {margin: 0; background-color: #f0f0f0; color: var(--main-blue); font-family
 }
 
 #opening-image {
-    border-radius: 35px;
+    border-radius: 30px;
     width: calc(100vw - 2*25px);
     height: 80vh;
     margin: 20px 25px;
@@ -30,7 +30,7 @@ body {margin: 0; background-color: #f0f0f0; color: var(--main-blue); font-family
     color: #fafafa;
 
     position: absolute;
-    top: 24vh;
+    top: 20vh;
     left:50px;
 
     margin: 30px;
@@ -52,7 +52,7 @@ body {margin: 0; background-color: #f0f0f0; color: var(--main-blue); font-family
 }
 
 #opening-slogan #subtitle {
-    line-height: 40px;
+    line-height: 1.5em;
     display: inline;
     padding: 0.4rem 0 0.5rem;
     background: color-mix(in srgb, var(--text-blue) 80%, transparent);
