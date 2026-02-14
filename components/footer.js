@@ -31,6 +31,14 @@ footerTemplate.innerHTML = `
         background-color: transparent;
     }
 
+    [data-lang-el="en"] {
+      display: var(--display-state-en);
+    }
+
+    [data-lang-el="nl"] {
+      display: var(--display-state-nl);
+    }
+
      /* Style rules for phone  */
   @media only screen and (max-width: 480px) {
     footer {
@@ -46,13 +54,19 @@ footerTemplate.innerHTML = `
   }
   </style>
     <footer>
-        <div id="short-text">TU Delft for Integrity is a grassroots initiative composed of academic staff, researchers and students. It is not organised, run by, or formally represent the TU Delft.
+        <div id="short-text">
+          <span data-lang-el=en>TU Delft for Integrity is a grassroots initiative composed of academic staff, researchers and students. It is not organised, run by, or formally represent the TU Delft.</span>
+          <span data-lang-el=nl>TU Delft for Integrity is een initiatief opgezet door ondersteunend en beheerspersoneel, onderzoekers en studenten. Het is niet georganiseerd of uitgevoerd door de TU Delft, noch representeert dit initiatief de TU Delft als organistie.</span>
         <br><br>     
-        tudelft.forintegrity.nl is independent of other subdomains under the forintegrity.nl domain.
+        <span data-lang-el=en>tudelft.forintegrity.nl is independent of other subdomains under the forintegrity.nl domain.</span>
+        <span data-lang-el=nl>tudelft.forintegrity.nl is onafhankelijk van andere subdomeinen onder het forintegrity.nl domein.</span>
         </div>
-        <button onclick="window.open('https://forms.office.com/e/5zrfcJS70Z')">
-            Get in touch with us
-        </button>
+          <span data-lang-el=en><button onclick="window.open('https://forms.office.com/e/5zrfcJS70Z')">
+              Get in touch with us
+          </button></span>
+          <span data-lang-el=nl><button onclick="window.open('https://forms.office.com/e/5zrfcJS70Z')">
+              Contact
+          </button></span>
     </footer>
 `;
 

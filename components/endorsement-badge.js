@@ -64,7 +64,7 @@ class EndorsementBadge extends HTMLElement {
   constructor() {
     super();
     const shadowRoot = this.attachShadow({ mode: "open" });
-    shadowRoot.appendChild(endorsementBadgeTemplate.content);
+    shadowRoot.appendChild(endorsementBadgeTemplate.content.cloneNode(true));
     //this.get_endorsements();
 
     shadowRoot.getElementById('badge').addEventListener('click', () => {

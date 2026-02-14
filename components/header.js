@@ -40,6 +40,10 @@ headerTemplate.innerHTML = `
       cursor: pointer;
   }
 
+  #header-group-right {
+    display:flex;
+  }
+
   #actionbuttons {
       display: flex;
       align-items: center;
@@ -75,6 +79,30 @@ headerTemplate.innerHTML = `
     background-color: #fafafa;
   }
 
+  /* language visibility */
+
+  #lang-selector ul{
+    display: flex;
+    list-style-type: none;
+    padding-inline-start:0;
+  }
+
+  #lang-selector button {
+    border: none;
+    background: none;
+    padding: 0 4px;
+    color: #fafafa;
+    font-size: 1em;
+  }
+
+  [data-lang-el="en"] {
+    display: var(--display-state-en);
+  }
+
+  [data-lang-el="nl"] {
+    display: var(--display-state-nl);
+  }
+
 .showmobile {display: none}
 .hidemobile {display: block}
 
@@ -101,11 +129,20 @@ headerTemplate.innerHTML = `
         margin-left:0;
     }
 
+    #header-group-right {
+      flex-direction: column-reverse;
+    }
+
+
     .bubble-button {
         padding:7px 11px 7px 14px;
         margin-left: 0px;
         margin-right: 6px;
         background-color: rgba(0,0,0,0.6);
+    }
+
+    #lang-selector ul{
+      width: 100%;
     }
 
     .showmobile {display: block}
@@ -118,24 +155,35 @@ headerTemplate.innerHTML = `
   <div id="orgname" onclick="window.location.href='/index.html'"><img src="/media/logo-tudelft-for-integrity.png" style="height:4em;"></div>
   <div id="navbar">
       <div class="nav-item" onclick="window.location.href='/index.html'">Home</div>
-      <div class="nav-item" onclick="window.location.href='/output/2025-our-moral-deliberation.html'">Our&nbsp;Deliberation</div>
-      <div class="nav-item" onclick="window.location.href='/about.html'">About</div>
+      <div class="nav-item" onclick="window.location.href='/output/2025-our-moral-deliberation.html'"><span data-lang-el='en'>Our&nbsp;Deliberation</span><span data-lang-el=nl>Ons Moreel Beraad</span></div>
+      <div class="nav-item" onclick="window.location.href='/about.html'"><span data-lang-el='en'>About</span><span data-lang-el=nl>Over&nbsp;ons</span></div>
   </div>
-  <div id="actionbuttons">
-    <div id="complaint" class="bubble-button" onclick="window.location.href='/actions/complaint-form.html'">
-        <div class="hidemobile">Report&nbsp;an&nbsp;Incident</div>
-        <div class="showmobile">Report</div>
-        <div class="icon" style="font-size: 1.5em; -webkit-mask: url(/icons/fmd_bad_24dp_1F1F1F_FILL0_wght300_GRAD0_opsz24.svg) no-repeat center;"></div>
+  <div id="header-group-right">
+   <nav aria-label="Language selector" id="lang-selector">
+      <ul>
+        <li data-lang-el='en' style="opacity:30%"><button aria-label="Switch to English" lang="en" onclick="setLanguage('en')">EN</button></li>
+        <li data-lang-el='nl' ><button aria-label="Switch to English" lang="en" onclick="setLanguage('en')">EN</button></li>
+        <span style="opacity:30%">/</span>
+        <li data-lang-el='en'><button aria-label="Lees in het Nederlands" lang="nl" onclick="setLanguage('nl')">NL</button></li>
+        <li data-lang-el='nl' style="opacity:30%"><button aria-label="Lees in het Nederlands" lang="nl" onclick="setLanguage('nl')">NL</button></li>
+      </ul>
+    </nav>
+    <div id="actionbuttons">
+      <div id="complaint" class="bubble-button" onclick="window.location.href='/actions/complaint-form.html'">
+          <div class="hidemobile"><span data-lang-el='en'>Report&nbsp;an&nbsp;Incident</span><span data-lang-el=nl>Meld&nbsp;een&nbsp;Incident</span></div>
+          <div class="showmobile"><span data-lang-el='en'>Report</span><span data-lang-el=nl>Meld</span></div>
+          <div class="icon" style="font-size: 1.5em; -webkit-mask: url(/icons/fmd_bad_24dp_1F1F1F_FILL0_wght300_GRAD0_opsz24.svg) no-repeat center;"></div>
+        </div>
+      <div id="endorsement" class="bubble-button" onclick="window.open('https://forms.office.com/e/qYGAxbVee1')">
+        <div class="hidemobile"><span data-lang-el='en'>Endorse&nbsp;our&nbsp;Message</span><span data-lang-el=nl>Steun&nbsp;onze&nbsp;Boodschap</span></div>
+        <div class="showmobile"><span data-lang-el='en'>Endorse</span><span data-lang-el=nl>Steun</span></div>
+        <div class="icon" style="font-size: 1.5em; -webkit-mask: url(/icons/volunteer_activism_24dp_1F1F1F_FILL0_wght300_GRAD0_opsz24.svg) no-repeat center;"></div>
       </div>
-    <div id="endorsement" class="bubble-button" onclick="window.open('https://forms.office.com/e/qYGAxbVee1')">
-      <div class="hidemobile">Endorse&nbsp;our&nbsp;Message</div>
-      <div class="showmobile">Endorse</div>
-      <div class="icon" style="font-size: 1.5em; -webkit-mask: url(/icons/volunteer_activism_24dp_1F1F1F_FILL0_wght300_GRAD0_opsz24.svg) no-repeat center;"></div>
-    </div>
-    <div id="contact" class="bubble-button" onclick="window.open('https://forms.office.com/e/5zrfcJS70Z')">
-      <div class="hidemobile">Get&nbsp;in&nbsp;Touch</div>
-      <div class="showmobile">Contact</div>
-        <div class="icon" style="font-size: 1.5em; -webkit-mask: url(/icons/call_made_24dp_1F1F1F_FILL0_wght300_GRAD0_opsz24.svg) no-repeat center;"></div>
+      <div id="contact" class="bubble-button" onclick="window.open('https://forms.office.com/e/5zrfcJS70Z')">
+        <div class="hidemobile"><span data-lang-el='en'>Get&nbsp;in&nbsp;Touch</span><span data-lang-el=nl>Contact</span></div>
+        <div class="showmobile">Contact</div>
+          <div class="icon" style="font-size: 1.5em; -webkit-mask: url(/icons/call_made_24dp_1F1F1F_FILL0_wght300_GRAD0_opsz24.svg) no-repeat center;"></div>
+      </div>
     </div>
   </div>
   </header>

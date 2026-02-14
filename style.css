@@ -3,6 +3,8 @@
     --side-margin-content: 60px;
     --main-blue: #0800a8ff;
     --text-blue: #060080;
+    --display-state-en: "none";
+    --display-state-nl: "block";
 }
 
 body {margin: 0; background-color: #f0f0f0; color: var(--main-blue); font-family: Arial, Helvetica, sans-serif;}
@@ -53,7 +55,7 @@ body {margin: 0; background-color: #f0f0f0; color: var(--main-blue); font-family
 
 #opening-slogan #subtitle {
     line-height: 1.5em;
-    display: inline;
+    display: inline; 
     padding: 0.4rem 0 0.5rem;
     background: color-mix(in srgb, var(--text-blue) 80%, transparent);
     z-index: 5;
@@ -128,6 +130,16 @@ button, input[type="submit"], input[type="reset"] {
 	padding: 0;
 	font: inherit;
 	outline: inherit;
+}
+
+/* language visibility */
+
+[data-lang-el="en"] {
+  display: var(--display-state-en);
+}
+
+[data-lang-el="nl"] {
+  display: var(--display-state-nl);
 }
 
 @media only screen and (max-width: 480px) {
