@@ -6,7 +6,7 @@ documentTemplate.innerHTML = `
 <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&family=Cal+Sans&display=swap" rel="stylesheet">
 
 <style>
-#document {
+.document {
   font-size: 1.05em;
   max-width: 75ch;
   margin: 0 auto 10px auto;
@@ -22,7 +22,7 @@ documentTemplate.innerHTML = `
   line-height: 1.5em;
 }
 
-#document #title{
+.document #title{
     font-size: 5.2em;
     font-weight: bold;
     font-family: "Cal Sans", sans-serif;
@@ -32,7 +32,7 @@ documentTemplate.innerHTML = `
     margin: 10px 0 20px 0;
 }
 
-#document #subtitle{
+.document #subtitle{
     font-size: 1.8em;
     line-height: 0.99em;
     font-family: "Cal Sans", sans-serif;
@@ -41,18 +41,18 @@ documentTemplate.innerHTML = `
     margin-bottom: 5px;
 }
 
-#document #date{
+.document #date{
   font-family: "Cal Sans", sans-serif;
   font-weight: 400;
   font-style: normal;
   opacity: 20%;
 }
 
-#document #body-content{
+.document #body-content{
   margin-top:15px;
 }
 
-#document h2 {
+.document h2 {
     line-height: 1.5em;
 }
 
@@ -62,19 +62,19 @@ documentTemplate.innerHTML = `
 }
             
 @media only screen and (max-width: 480px) {
-#document {
+.document {
     font-size: 1em;
     margin: 0 auto 5px auto;
     padding: 30px 16px;
     filter: none; */
 }
 
-#document #title{
+.document #title{
     font-size: 3em;
     line-height: 0.95em;;
 }
 
-#document #subtitle{
+.document #subtitle{
     font-size: 1.5em;
     line-height: 1.1em;
     margin: 0 0 7px 0;
@@ -82,7 +82,7 @@ documentTemplate.innerHTML = `
 }
 </style>
 
-<div id="document">
+<div class="document">
     <div id="title">
       <slot name="title"></slot>
     </div>
@@ -113,7 +113,7 @@ class Document extends HTMLElement {
   constructor() {
     super();
     const shadowRoot = this.attachShadow({ mode: "open" });
-    shadowRoot.appendChild(documentTemplate.content);
+    shadowRoot.appendChild(documentTemplate.content.cloneNode(true));
   }
 
 }
