@@ -49,7 +49,7 @@ endorsementListTemplate.innerHTML = `
     padding: 8px 0;
   }
 
-  #anonymous {
+  .anonymous {
     color:black;
     opacity: 40%;
   }  
@@ -61,6 +61,14 @@ endorsementListTemplate.innerHTML = `
   }
 
   #padbox {margin: 0 0px;}
+
+  [data-lang-el="en"] {
+    display: var(--display-state-en);
+  }
+
+  [data-lang-el="nl"] {
+    display: var(--display-state-nl);
+  }
 
   @media only screen and (max-width: 480px) {
     #padbox {margin: 0px;}
@@ -83,11 +91,13 @@ endorsementListTemplate.innerHTML = `
   <div id="padbox">
   <div id="caption">
     <img src="/icons/volunteer_activism_24dp_1F1F1F_FILL0_wght400_GRAD0_opsz24.svg">
-    Your peers below have endorsed this message. Will you join them in showing
-    your support?
+    <span data-lang-el=en>Your peers below have endorsed this message. Will you join them in showing
+    your support?</span>
+    <span data-lang-el=nl>De onderstaande collega's hebben dit bericht al gesteund. Sluit je je bij hen aan door dit bericht te steunen?</span>
   </div>
   <div id="endorsement-list">
-    <div id="anonymous" class="named-endorsement" hidden>And <span id="anonymous-endorsements">0</span> anonymous endorsements</div>
+    <div class="anonymous" class="named-endorsement" hidden data-lang-el=en>And <span class="anonymous-endorsements">0</span> anonymous endorsements</div>
+    <div class="anonymous" class="named-endorsement" hidden data-lang-el=nl>En <span class="anonymous-endorsements">0</span> anonieme steunbetuigingen</div>
   </div>
   <div>
 </div> 
@@ -165,8 +175,8 @@ class EndorsementList extends HTMLElement {
 
     // unhide the end section that lists the number of anonymous endorsements
     if (this.num_anonymous > 0) {
-      this.shadowRoot.querySelector("#anonymous-endorsements").textContent = this.num_anonymous
-      this.shadowRoot.querySelector("#anonymous").removeAttribute("hidden")
+      this.shadowRoot.querySelectorAll(".anonymous-endorsements").forEach(el => el.textContent = this.num_anonymous)
+      this.shadowRoot.querySelectorAll(".anonymous").forEach(el => el.removeAttribute("hidden"))
     }
 
   }
