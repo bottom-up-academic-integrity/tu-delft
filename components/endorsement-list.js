@@ -93,7 +93,7 @@ endorsementListTemplate.innerHTML = `
     <img src="/icons/volunteer_activism_24dp_1F1F1F_FILL0_wght400_GRAD0_opsz24.svg">
     <span data-lang-el=en>Your peers below have endorsed this message. Will you join them in showing
     your support?</span>
-    <span data-lang-el=nl>De onderstaande collega's hebben dit bericht al gesteund. Sluit je je bij hen aan door dit bericht te steunen?</span>
+    <span data-lang-el=nl>De onderstaande collega's hebben deze boodschap al gesteund. Sluit je je bij hen aan door deze boodschap ook te steunen?</span>
   </div>
   <div id="endorsement-list">
     <div class="anonymous" class="named-endorsement" hidden data-lang-el=en>And <span class="anonymous-endorsements">0</span> anonymous endorsements</div>
