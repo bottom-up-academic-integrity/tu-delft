@@ -4,6 +4,14 @@
     align-items: center;
 }
 
+#language-warning {
+    background-color: #c70e0e;
+    color:white;
+    padding: 5px 10px 5px 10px;
+    font-weight: bold;
+    margin-top:16px;
+}
+
 h1#event-date {
     font-size: 3em;
     margin:0;
