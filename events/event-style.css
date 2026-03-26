@@ -1,0 +1,121 @@
+#date-and-partners {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+h1#event-date {
+    font-size: 3em;
+    margin:0;
+}
+
+#event-partners {
+    display:flex;
+    align-items: center;
+}
+
+#event-partners .partner img{
+    display: block;
+    height: 80px;
+    filter: url(#duotone-deep-blue-white);
+}
+
+#event-details-link {
+    font-weight: bold;
+    text-decoration: none;
+    color: var(--text-blue)
+}
+
+#event-header {
+    margin-top: 12px;
+}
+
+#event-type {
+    font-size: 1.1em;
+}
+
+#event-header h2 {
+    margin-top: 0;
+}
+
+#event-description {
+    margin: 32px 0 32px 0;
+}
+
+#event-signup-section {
+    display: inline-block;
+}
+
+#event-signup {
+    border: 3px solid var(--text-blue);
+    display: flex;
+    align-items: center;
+    font-size: 1.4em;
+    text-decoration: none;
+}
+
+#event-signup #icon-box {
+    background-color: var(--text-blue);
+}
+
+
+#event-signup .icon {
+    font-size: 2em;
+    width: 1em;
+    height: 1em;
+    background-color: #f0f0f0;
+    transform: scale(1.3);
+}
+
+#event-signup #call-to-action, #call-to-action:visited {
+    color: var(--text-blue);
+    padding: 0px 40px 0px 14px;
+    
+}
+
+#event-signup:hover{
+    background-color: rgba(0,0,0,0.1);
+}
+
+
+#event-signup-section #location {
+    margin-top: 1px;
+    font-size: 0.9em;
+}
+
+#promotional-items {
+    margin-top: 20px;
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.promotion-button a{
+    border: 0px;
+    border-radius:10px;
+}
+
+/* Ensures that neighbouring boxes have the same height */
+card-box {display:flex} 
+
+
+
+
+@media only screen and (max-width: 480px) {
+
+    #date-and-partners {
+        flex-direction: column;
+        margin-bottom: 30px;
+        margin-top: 20px;
+        align-items: start;
+    }
+
+    h1#event-date {font-size: 2em;}
+
+    #event-partners {margin-top: 12px;}
+
+    #event-signup-section {
+        display: block;
+    }
+
+}

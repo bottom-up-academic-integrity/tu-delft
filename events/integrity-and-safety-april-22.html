@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title> TU Delft for Integrity | A place for moral deliberation for TU Delft members</title>
+    <meta
+      name="description"
+      content="A grassroots initiative organized by staff working on research projects at TU Delft. United by the Code of Conduct and international law." />
+    <link rel="icon" href="/media/favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="event-style.css">
+
+    <script src="/utils/language-selection.js" type="text/javascript" defer></script>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&family=Cal+Sans&display=swap" rel="stylesheet">
+
+    <script src="/components/header.js" type="text/javascript" defer></script>
+    <script src="/components/banner-graphic.js" type="text/javascript" defer></script>
+    <script src="/components/footer.js" type="text/javascript" defer></script>
+    <script src="/components/card.js" type="text/javascript" defer></script>
+  </head>
+  <body>
+    <header-component></header-component>
+    <banner-graphic>
+      <span slot="text">On-Campus Event</span>
+    </banner-graphic>
+    <div class="padding-box">
+      <div id="content-box">
+        <div data-lang-el=en id="date-and-partners">
+          <h1 id="event-date">April 22nd 2026 <span style="opacity: 10%;">at</span> 16:00</h1>
+          <div id="event-partners">
+            <div class="partner"><img src="media/FNV.webp"></div>
+            <div class="partner"><img src="media/ELSC_Horizontal.png"></div>
+          </div>
+        </div>
+        
+        <div id="event-header">
+          <div id="event-type">On-Campus Seminar</div>
+          <h2 data-lang-el=en>Our Right to Integrity and Safety</h2>
+        </div>
+        
+        <div id="event-description">
+          <p>We—organized staff, union members, and union representatives, together with experienced lawyers—come together to explore better ways to ensure that integrity meets safety, and that standards remain real in practice, not just in principle. <a href="https://www.fnv.nl" target="_blank"  id="event-details-link">Read More</a></p>
+        </div>
+
+        <div id="event-signup-section">
+          <a id="event-signup" href="https://www.tudelft.nl" target="_blank">
+            <div id="icon-box"><div class="icon" style="-webkit-mask: url(/icons/calendar_add_on_24dp_E3E3E3_FILL0_wght300_GRAD0_opsz24.svg) no-repeat center;"></div></div>
+            <div id="call-to-action">Sign Up & Reserve Spot</div>
+          </a>
+          
+          <div id="location">Lecture Hall Ampere (EWI 36.HB.01.670)</div>
+        </div>
+  
+        
+        <h3 data-lang-el=en>Promotional Material</h3>
+        <br>
+        If you are joining for the event, it would be great
+        if you also invite a colleague to join. Below you will find some promotional material for 
+        the event that will be useful in conveying the key aspects of the event.
+
+        <div id="promotional-items">
+          <card-box>
+            <span slot="category">Online</span>
+            <span slot="header">Share the FNV page</span>
+            <span slot="bodytext">The central online promotional page is hosted by the FNV. Share the page, and why not consider joining the union while you are there?</span>
+            <span slot="action" class="actionbuttons promotion-button">
+              <a href="https://www.fnv.nl" target="_blank">Visit Page
+                <div class="icon" style="font-size: 1.7em; -webkit-mask: url(/icons/open_in_new_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg) no-repeat center;"></div></a></span>
+          </card-box>
+
+          <card-box inactive>
+            <span slot="category">Poster</span>
+            <span slot="header">Event Poster A3/A4</span>
+            <span slot="bodytext">We can get you a physical poster for your office or deparment notice board. Get in touch.
+            </span>
+            <span slot="action" class="actionbuttons promotion-button">
+              <a href="https://www.fnv.nl" target="_blank">Download
+                <div class="icon" style="font-size: 1.7em; -webkit-mask: url(/icons/file_save_24dp_1F1F1F_FILL0_wght400_GRAD0_opsz24.svg) no-repeat center;"></div></a></span>
+          </card-box>
+
+          <card-box inactive>
+            <span slot="category">Flyers</span>
+            <span slot="header">A5 Format Flyers</span>
+            <span slot="bodytext"></span>
+            <span slot="action" class="actionbuttons promotion-button">
+              <a href="https://www.fnv.nl" target="_blank">Download
+                <div class="icon" style="font-size: 1.7em; -webkit-mask: url(/icons/file_save_24dp_1F1F1F_FILL0_wght400_GRAD0_opsz24.svg) no-repeat center;"></div></a></span>
+          </card-box>
+        </div>
+
+      </div>
+    </div>
+    <footer-component></footer-component>
+
+    <svg width="0" height="0" style="position: absolute;">
+        <filter id="duotone-deep-blue-white" color-interpolation-filters="sRGB">
+          <feColorMatrix
+            type="matrix"
+            values="
+              0.3333 0.3333 0.3333 0 0
+              0.3333 0.3333 0.3333 0 0
+              0.3333 0.3333 0.3333 0 0
+              0 0 0 1 0
+            "
+            result="grayscale"
+          />
+      
+          <feComponentTransfer color-interpolation-filters="sRGB" in="grayscale">
+            <feFuncR type="table" tableValues="0 0.92" />
+            <feFuncG type="table" tableValues="0 1" />
+            <feFuncB type="table" tableValues="0.627 1" />
+            <feFuncA type="identity" />
+          </feComponentTransfer>
+        </filter>
+    </svg>
+  </body>
+</html>
