@@ -3,7 +3,6 @@ const headerTemplate = document.createElement('template');
 headerTemplate.innerHTML = `
 
   <style>
-
   header {
       color: #fafafa;
       display: flex;
@@ -106,6 +105,34 @@ headerTemplate.innerHTML = `
 .showmobile {display: none}
 .hidemobile {display: block}
 
+  #banner {
+    background-color: #656ec8;
+    
+    padding: 8px 20px 8px 20px;
+    display: none;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+  }
+
+  #banner a {
+    text-decoration: none;
+    color:#fafafa;
+    font-size: 1em;
+    display: flex;
+    align-items:center;
+  }
+
+  #banner .icon {
+    margin-right:9px;
+    width: 1em;
+    height: 1em;
+    background-color: #fafafa;
+  }
+
+  /* Pause on hover  */
+
+
   @media only screen and (max-width: 480px) {
     header {
         flex-direction:column;
@@ -151,6 +178,12 @@ headerTemplate.innerHTML = `
   
   }
   </style>
+  <div> 
+  <div id="banner" class="actionbuttons">
+      <a href="/events/integrity-and-safety-april-22.html"><div class="icon" style="font-size: 1.5em; -webkit-mask: url(/icons/campaign_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg) no-repeat center;"></div>Come attend our Campus Event on April 22nd 15:00! Click to find out more.</a>
+  </div> 
+  <div style="position:relative"> 
+  <slot></slot>
   <header>
   <div id="orgname" onclick="window.location.href='/index.html'"><img src="/media/logo-tudelft-for-integrity.png" style="height:4em;"></div>
   <div id="navbar">
@@ -187,6 +220,8 @@ headerTemplate.innerHTML = `
     </div>
   </div>
   </header>
+  </div> 
+  </div>
 `;
 
 
@@ -196,7 +231,18 @@ class Header extends HTMLElement {
     const shadowRoot = this.attachShadow({ mode: "open" });
     shadowRoot.appendChild(headerTemplate.content);
 
+    this.checkBannerDate()
+  }
 
+
+  // check if we should still show the current banner
+  checkBannerDate() {
+    const thresholdDate = new Date('2026-04-23'); // Set your date here (+1 day)
+    const currentDate = new Date();
+    console.log(this.shadowRoot.getElementById('banner'))
+    if (currentDate < thresholdDate) {
+      this.shadowRoot.getElementById('banner').style.display = 'flex';
+    }
   }
 
 }
