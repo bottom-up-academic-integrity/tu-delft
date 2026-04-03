@@ -23,6 +23,17 @@
     <script src="../components/footer.js" type="text/javascript" defer></script>
     <script src="../components/card.js" type="text/javascript" defer></script>
   </head>
+  <script>
+    // generate an event redirection page. This url can be used to generate the promotional QR code for
+    // the event
+    const urlParams = new URLSearchParams(window.location.search);
+
+    // If the user provides this page's URL and adds '&promo=true' then they should be redirected to a 
+    // different URL that hosts protomotion for the event
+    if (urlParams.get("promo") === "true") {
+      window.location.href = "https://www.fnv.nl/cao-sector/overheid/onderwijs-onderzoek/universiteiten/meld-je-aan-voor-our-right-to-integrity-and-safety"
+    }
+</script>
   <body>
     <header-component></header-component>
     <banner-graphic>
