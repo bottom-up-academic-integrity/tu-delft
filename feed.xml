@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title>TU Delft for Integrity</title>
+  <link href="https://tudelft.forintegrity.nl/"/>
+  <updated>2003-12-13T18:30:02Z</updated>
+  <author>
+    <name>TU Delft for Integrity</name>
+    <email>unionforintegrity@tudelft.nl</email>
+  </author>
+  <id>"https://tudelft.forintegrity.nl/"</id>
+  <category term="news"/>
+  <icon>https://tudelft.forintegrity.nl/media/favicon-tiny.jpg</icon>
+  <logo>https://tudelft.forintegrity.nl/media/logo-tudelft-for-integrity-for-RSS.jpg</logo>
+
+  <!--posts/events go below this point-->
+
+  <entry>
+    <title>Campus Event: Our Right to Integrity and Safety</title>
+    <link rel="alternate" type="text/html" href="https://tudelft.forintegrity.nl/events/integrity-and-safety-april-22.html"/>
+    <id>urn:uuid:80d6ff24-c4db-47a2-9515-bf0ccdf60229</id>
+    <updated>2026-04-02T17:00:00+01:00</updated>
+    <summary>We—organized staff, union members, and union representatives, together with experienced lawyers—come together to explore better ways to ensure that integrity meets safety, and that standards remain real in practice, not just in principle.</summary>
+    <category term="news"/>
+    <category term="event"/>    
+  </entry>
+
+  <entry>
+    <title>Our Deliberation: TU Delft, Integrity, and Genocide</title>
+    <link rel="alternate" type="text/html" href="https://tudelft.forintegrity.nl/output/2025-our-moral-deliberation.html"/>
+    <id>urn:uuid:2f27c8ca-e522-402c-a17d-96339f47beea</id>
+    <updated>2025-06-02T17:30:00+01:00</updated>
+    <summary>This document is a detailed response to TU Delft’s recent moral deliberation report on institutional collaborations related to the Israel-Gaza conflict. It addresses a fundamental concern: that the report fails to meet the ethical, legal, and institutional responsibilities of the university given the current situation in Palestine. This report is not offered solely in critique, but as a constructive intervention, meant to support the TU Delft in taking stronger, ethically grounded action. Our aim is to help our university live up to its professed values by offering clear, actionable steps. We hope this contribution will be received by the TU Delft community not as adversarial, but as part of a shared commitment to integrity, accountability, and moral leadership in times of crisis.</summary>
+    <category term="news"/>
+    <category term="output"/>
+  </entry>
+
+  <entry>
+    <title>TU Delft for Integrity: Open Letter</title>
+    <link rel="alternate" type="text/html" href="https://tudelft.forintegrity.nl/output/2025-open-letter.html"/>
+    <id>urn:uuid:ea3dafe4-1113-41b2-bf0c-dcce154d286f</id>
+    <updated>2025-06-01T17:30:00+01:00</updated>
+    <summary>This letter is a summary of our response to TU Delft’s Moral Deliberation outcome and process regarding TU Delft’s institutional collaborations with Israeli entities implicated in war crimes, apartheid, and plausible genocide, as identified in the context of the Israel-Gaza conflict. For a deeper analysis of the process, its ethical shortcomings, and what a responsible alternative should look like, we invite you to read the full document.</summary>
+    <category term="news"/>
+    <category term="output"/>    
+  </entry>
+
+</feed>
