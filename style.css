@@ -7,6 +7,11 @@
     --display-state-nl: "block";
 }
 
+a {
+  text-decoration: none;
+  color: unset; /* Resets the color to the browser default or parent style */
+}
+
 body {margin: 0; background-color: #f0f0f0; color: var(--main-blue); font-family: Arial, Helvetica, sans-serif;}
 
 #opening-graphic {
@@ -141,6 +146,35 @@ body {margin: 0; background-color: #f0f0f0; color: var(--main-blue); font-family
     margin: 30px 0px 5px;
 }
 
+/* For small comments at the top of an article */
+.content-notice {
+    max-width: 80ch; 
+    margin: 0 auto 12px auto;
+    opacity: 80%;
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+    padding: 3px;
+}
+
+.content-notice:hover {
+    background-color: rgba(0,0,0,0.1);
+}
+
+.notice-message{    
+    font-size: 0.9em;
+}
+
+.content-notice .icon {
+    font-size: 1.5em;
+    width: 1em;
+    height: 1em;
+    background-color: var(--text-blue);
+    transform: scale(1);
+    margin-right: 4px;
+    margin-left: 4px;
+}
+
 button, input[type="submit"], input[type="reset"] {
 	background: none;
 	color: inherit;
@@ -149,6 +183,8 @@ button, input[type="submit"], input[type="reset"] {
 	font: inherit;
 	outline: inherit;
 }
+
+
 
 /* language visibility */
 
