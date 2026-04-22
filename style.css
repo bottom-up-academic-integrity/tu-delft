@@ -196,6 +196,11 @@ button, input[type="submit"], input[type="reset"] {
   display: var(--display-state-nl);
 }
 
+.footnotes {
+    font-size: 0.8em;
+    line-height: 1.2em;
+}
+
 @media only screen and (max-width: 480px) {
     :root {
     --side-margin-content: 24px;

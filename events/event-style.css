@@ -91,7 +91,7 @@ h1#event-date {
     font-size: 0.9em;
 }
 
-#promotional-items {
+.promotional-items {
     margin-top: 20px;
     display: grid;
     grid-gap: 1rem;
