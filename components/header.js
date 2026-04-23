@@ -102,15 +102,13 @@ headerTemplate.innerHTML = `
     display: var(--display-state-nl);
   }
 
-.showmobile {display: none}
-.hidemobile {display: block}
+  .showmobile {display: none}
+  .hidemobile {display: block}
 
   #banner {
     background-color: #656ec8;
-    
     padding: 8px 20px 8px 20px;
     display: none;
-    display:flex;
     justify-content:center;
     align-items:center;
   }
@@ -118,8 +116,8 @@ headerTemplate.innerHTML = `
   #banner a {
     text-decoration: none;
     color:#fafafa;
+    display:flex;
     font-size: 1em;
-    display: flex;
     align-items:center;
   }
 
@@ -180,7 +178,7 @@ headerTemplate.innerHTML = `
   </style>
   <div> 
   <div id="banner" class="actionbuttons">
-      <a href="/events/integrity-and-safety-april-22.html"><div class="icon" style="font-size: 1.5em; -webkit-mask: url(/icons/campaign_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg) no-repeat center;"></div>Come attend our Campus Event on April 22nd 15:00! Click to find out more.</a>
+      <a href=""><div class="icon" style="font-size: 1.5em; -webkit-mask: url(/icons/campaign_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg) no-repeat center;"></div>Active Events Notice</a>
   </div> 
   <div style="position:relative"> 
   <slot></slot>
@@ -188,7 +186,7 @@ headerTemplate.innerHTML = `
   <div id="orgname" onclick="window.location.href='/index.html'"><img src="/media/logo-tudelft-for-integrity.png" style="height:4em;"></div>
   <div id="navbar">
       <div class="nav-item" onclick="window.location.href='/index.html'">Home</div>
-      <div class="nav-item" onclick="window.location.href='/output/2025-our-moral-deliberation.html'"><span data-lang-el='en'>Our&nbsp;Deliberation</span><span data-lang-el=nl>Ons Moreel Beraad</span></div>
+      <div class="nav-item" onclick="window.location.href='/output.html'"><span data-lang-el='en'>Output</span><span data-lang-el=nl>Output</span></div>
       <div class="nav-item" onclick="window.location.href='/about.html'"><span data-lang-el='en'>About</span><span data-lang-el=nl>Over&nbsp;ons</span></div>
   </div>
   <div id="header-group-right">
