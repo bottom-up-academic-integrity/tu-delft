@@ -31,9 +31,9 @@
 
     // If the user provides this page's URL and adds '&promo=true' then they should be redirected to a 
     // different URL that hosts protomotion for the event
-    if (urlParams.get("promo") === "true") {
-      window.location.href = "https://www.fnv.nl/cao-sector/overheid/onderwijs-onderzoek/universiteiten/meld-je-aan-voor-our-right-to-integrity-and-safety"
-    }
+    // if (urlParams.get("promo") === "true") {
+    //   window.location.href = "https://www.fnv.nl/cao-sector/overheid/onderwijs-onderzoek/universiteiten/meld-je-aan-voor-our-right-to-integrity-and-safety"
+    // }
 </script>
   <body>
     <header-component></header-component>
@@ -68,15 +68,13 @@
           <p>We—organized staff, union members, and union representatives, together with experienced lawyers—come together to explore better ways to ensure that integrity meets safety, and that standards remain real in practice, not just in principle. <a href="https://www.fnv.nl/cao-sector/overheid/onderwijs-onderzoek/universiteiten/meld-je-aan-voor-our-right-to-integrity-and-safety" target="_blank"  id="event-details-link">Read more on the FNV website</a></p>
         </div>
 
-        <div id="event-signup-section">
+        <div id="event-signup-section" inactive>
           <a id="event-signup" href="https://forms.office.com/e/3T8ksfqhmz" target="_blank">
             <div id="icon-box"><div class="icon" style="-webkit-mask: url(../icons/calendar_add_on_24dp_E3E3E3_FILL0_wght300_GRAD0_opsz24.svg) no-repeat center;"></div></div>
             <div id="call-to-action">Sign Up & Reserve Spot</div>
           </a>
-          
           <div id="location">Lecture Hall Ampere (EWI 36.HB.01.670)</div>
         </div>
-
 
         <div>
           <h3>Organising collective and partners</h3>
@@ -86,18 +84,19 @@
   
           <p><b>The European Legal Support Center (ELSC)</b> is the first and only independent organisation defending and empowering the Palestine solidarity movement across Europe through legal means.</p>
         </div>
-  
 
-  
-        
+        <h3 data-lang-el=en>Resulting Output</h3>
+        <ul>
+        <li><a href="/output/2026-safety-integrity-and-accountability.html" target="_blank" >Read our new <b>Open Letter</b> first presented at the event</a></li>
+        <li><a href="https://delta.tudelft.nl/article/tussen-protest-en-kwetsbaarheid-hoe-veilig-is-kritiek-op-israelbeleid" target="_blank" >Delta wrote a brief article covering the event</a></li>
+        </ul>
         <h3 data-lang-el=en>Promotional Material</h3>
         <h3 data-lang-el=nl>Promotiemateriaal</h3>
         <p data-lang-el=en>
           If you are joining for the event, it would be great
           if you also invite a colleague to join. Below you will find some promotional material for 
           the event that will be useful in conveying the key aspects of the event.
-        </p>
-   
+        </p>   
 
         <div class="promotional-items" id="promo-material">
           <card-box>
@@ -140,14 +139,14 @@
         <h3 data-lang-el=en>Initiatives of Note</h3>
         <h3 data-lang-el=nl>Noemenswaardige Initiatieven</h3>
         <div class="promotional-items" id="x-promotion">
-          <card-box disabled>
+          <card-box inactive>
             <span slot="category">Solidarity</span>
             <span slot="header">There is more than one way to get active</span>
             <span slot="bodytext">Some groups were willing to have a poster of their cause present at the event. We suggest you check those out, and see if you are interested in helping out or at
               least get inspired. Link will only be available for a limited time.
             </span>
             <span slot="action" class="actionbuttons promotion-button">
-              <a href="https://github.com/bottom-up-academic-integrity/tu-delft/releases/tag/X-promotion" target="_blank">View Posters
+              <a target="_blank">View Posters
                 <div class="icon" style="font-size: 1.7em; -webkit-mask: url(../icons/open_in_new_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg) no-repeat center;"></div></a></span>
           </card-box>
         </div>
