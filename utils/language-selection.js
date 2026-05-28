@@ -1,7 +1,19 @@
 // when page loads, check if user has previously selected a language
 window.onload = () => {
   // get language from config, default to en
-  const savedLang = localStorage.getItem('preferredLang') || 'en';
+  let savedLang = localStorage.getItem('preferredLang') || 'en';
+
+  // check if the URL contains a language specifier (which overrides local value)
+  // e.g. tudelft.forintegrity.nl/output?lang=en
+  const urlParams = new URLSearchParams(window.location.search);
+  if (urlParams.get("lang") === "en") {
+    savedLang = "en"
+    console.log(`overriding local value for preferred language with URL parameter: ${savedLang}`)
+  }
+  else if (urlParams.get("lang") === "nl") {
+    savedLang = "nl"
+    console.log(`overriding local value for preferred language with URL parameter: ${savedLang}`)
+  }
   setLanguage(savedLang);
 };
 
