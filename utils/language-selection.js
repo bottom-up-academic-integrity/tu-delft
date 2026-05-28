@@ -1,7 +1,7 @@
 // when page loads, check if user has previously selected a language
 window.onload = () => {
-  // get language from config, default to nl
-  const savedLang = localStorage.getItem('preferredLang') || 'nl';
+  // get language from config, default to en
+  const savedLang = localStorage.getItem('preferredLang') || 'en';
   setLanguage(savedLang);
 };
 
