@@ -1,88 +1,419 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title> Concept Specification | University Polling System | TU Delft for Integrity
-</title>
-    <meta
-      name="description"
-      content="A grassroots initiative organized by staff working on research projects at TU Delft. United by the Code of Conduct and international law." />
-    <link rel="icon" href="../media/favicon.svg" type="image/svg+xml">
-    <link rel="alternate" type="application/atom+xml" title="Atom Feed" href="/feed.xml"/>
-    <link rel="stylesheet" href="../style.css">
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&family=Cal+Sans&display=swap" rel="stylesheet">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title> Concept Specification | University Polling System | TU Delft for Integrity
+  </title>
+  <meta name="description"
+    content="A grassroots initiative organized by staff working on research projects at TU Delft. United by the Code of Conduct and international law." />
+  <link rel="icon" href="../media/favicon.svg" type="image/svg+xml">
+  <link rel="alternate" type="application/atom+xml" title="Atom Feed" href="/feed.xml" />
+  <link rel="stylesheet" href="../style.css">
 
-    <script src="/utils/language-selection.js" type="text/javascript" defer></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&family=Cal+Sans&display=swap"
+    rel="stylesheet">
 
-    <script src="../components/document.js" type="text/javascript" defer></script>
-    <script src="../components/header.js" type="text/javascript" defer></script>
-    <script src="../components/banner-graphic.js" type="text/javascript" defer></script>
-    <script src="../components/footer.js" type="text/javascript" defer></script>
-    <script src="../components/endorsement-list.js" type="text/javascript" defer></script>
-    <script src="../components/endorsement-badge.js" type="text/javascript" defer></script>
-  </head>
-  <body>
-    <header-component></header-component>
-    <banner-graphic>
-      <span slot="text">Output</span>
-    </banner-graphic>
-    <div class="padding-box">
-        <!-- Reference event -->
-        <a href="../events/integrity-and-safety-april-22.html"><div class="content-notice">
-            <div id="icon-box"><div class="icon" style="-webkit-mask: url(../icons/calendar_clock_24dp_E3E3E3_FILL0_wght300_GRAD0_opsz24.svg) no-repeat center;"></div></div>
-            <div class="notice-message" data-lang-el=en>This output was first presented at an on-campus event the group organised on April 22nd 2026.</div>
-            <div class="notice-message" data-lang-el=nl>Dit item was onthuld op een evenement op de campus georganiseerd door de groep op 22 april 2026.</div> 
-        </div></a>
+  <script src="/utils/language-selection.js" type="text/javascript" defer></script>
 
-        <!-- English -->
-        <document-component data-lang-el=en>
-            <span slot="title">Concept for insitutional polling system.</span>
-            <span slot="subtitle">Our thoughts on how an insitutional polling system could work and about aspects to consider.</span>
-            <span slot="date">April 2026</span>
-            <span slot="body-content">
-              <p style="opacity: 50%;">This document is under construction. Expect to see more details here in the near future as we deliberate on practical implementation. You can get involved in the process by sending your suggestions or doubts. Get in touch.</p>
+  <script src="../components/document.js" type="text/javascript" defer></script>
+  <script src="../components/header.js" type="text/javascript" defer></script>
+  <script src="../components/banner-graphic.js" type="text/javascript" defer></script>
+  <script src="../components/footer.js" type="text/javascript" defer></script>
+  <script src="../components/endorsement-list.js" type="text/javascript" defer></script>
+  <script src="../components/endorsement-badge.js" type="text/javascript" defer></script>
+</head>
+
+<body>
+  <header-component></header-component>
+  <banner-graphic>
+    <span slot="text">Output</span>
+  </banner-graphic>
+  <div class="padding-box">
+    <!-- Reference event -->
+    <a href="../events/integrity-and-safety-april-22.html">
+      <div class="content-notice">
+        <div id="icon-box">
+          <div class="icon"
+            style="-webkit-mask: url(../icons/calendar_clock_24dp_E3E3E3_FILL0_wght300_GRAD0_opsz24.svg) no-repeat center;">
+          </div>
+        </div>
+        <div class="notice-message" data-lang-el=en>This output was first presented at an on-campus event the group
+          organised on April 22nd 2026.</div>
+        <div class="notice-message" data-lang-el=nl>Dit item was onthuld op een evenement op de campus georganiseerd
+          door de groep op 22 april 2026.</div>
+      </div>
+    </a>
+
+    <!-- English -->
+    <document-component data-lang-el=en>
+      <span slot="title">Concept for insitutional polling system.</span>
+      <span slot="subtitle">Our thoughts on how an insitutional polling system could work and about aspects to
+        consider.</span>
+      <span slot="date">April 2026</span>
+      <span slot="body-content">
+
+        <p style="opacity: 50%;">This document describes a concept
+          system. Not every aspect would have to be implemented as
+          described here to achieve the desired democratisation. For
+          broader context, you should read and consider endorsing <a
+            href="../output/2026-safety-integrity-and-accountability.html" style="text-decoration: underline;">the
+            accompanying Open
+            Letter</a>. You can get involved in the process by emailing us your
+          suggestions or doubts.</p>
+
+        <p>We identify two important observations that we think should be addressed in
+          any proposed system that aims to achieve democratisation of the
+          institution.</p>
+
+        <ol>
+          <li> Existing committee and reporting systems require large time
+            commitments and enable only a limited number of people to work
+            toward change. A collective participatory process would make it
+            possible for everyone to make themselves heard or amplify the
+            voices of others.</li>
+          <li>A democratized system without any
+            clear, binding commitments does not provide a direct way to hold
+            the institution accountable. Members of staff - especially those
+            who have lost their trust in the institution - are unlikely to
+            engage with even the best system if they think its outcome can be
+            ignored.</li>
+        </ol>
+
+        <h1>Aspects of an Institutional Polling System</h1>
+
+        In order to allow the broadest possible input, and allow collective
+        participation, we propose something best described as an institutional
+        polling system should be created.
+
+        <h3>A platform for democratisation</h3>
+
+        An institutional polling system could be built out as an extension of
+        the presently used <a href="stem.tudelft.nl" style="text-decoration:
+        underline;">stem.tudelft.nl</a> (vote.tudelft.nl). This subdomain is already we
+        reasonably well known, exists in English and Dutch variants and is a
+        sensible subdomain for TU Delft matters related to democratisation.
+
+        <img src="/media/output/stem-tudelft.png" width="100%">
+
+        The current platform of stem.tudelft.nl is powered by an external solution provider
+        (<a href="https://progressonderwijs.nl/">progressonderwijs.nl</a>), which
+        may be limited in its extendability. We will not consider these limitations
+        here.
+
+        <h3>Scope and Visibility</h3>
+
+        By running the proposed institutional polling system through stem.tudelft.nl,
+        two aspects of the system become immediately clear:
+
+        <ol>
+          <li>Voting is <b>secure and restricted</b> to TU Delft employees (and students)</li>
+          <li>
+            Voting is an <b>internal</b> TU Delft process. The broader public and
+            media is not able to access the results unless explicitly included.
+          </li>
+        </ol>
+
+        <p>
+          Restricting voting to TU Delft staff and students is a logical requirement,
+          as is precisely those that make up the organisation that should decide on
+          its future. Outside input on matters regarding TU Delft decisionmaking
+          should not be handled by this system.
+        </p>
+
+        <p>
+          Keeping the voting internal in its initial phases seems appropiate,
+          to avoid creating undue media attention in the general case. This aspect
+          is not set in stone and will tie into the accountability and the communication
+          sections below. In first principle, communication of current state of
+          a an institutional polling or outcome of a close polling should be handled
+          through parties such as Delta, the TU Delft media communication or
+          the poll organisers; rather than a public, live, website link.
+        </p>
+
+        <h3>Creation process</h3>
+
+        In line with the spirit of democratisation, it should be possible for
+        any member of the TU Delft to create an institutional poll. In order to
+        prevent the creation of an excessive number of polls, it might be reasonable to require certain
+        conditions for poll creation.
+
+        Some possible options might be:
+        <ul>
+          <li>
+            Requiring a quorum of TU Delft members to create a poll. Requiring a
+            small group of e.g. ~10 people to all become active intiators of a poll
+            would set a certain 'effort' threshold.
+          </li>
+          <li>
+            Restricting student from creating polls, or explicitly limiting the range
+            of topics to those relating to student matters (similar to the scopes
+            of existing medezeggenschap approaches)
+          </li>
+        </ul>
+
+        Whether the organisers of a poll should have the option to remain
+        anonymous is a difficult matter. Fearing relaliation from management,
+        organisers may abstain from creating a poll on a topic that nonetheless
+        would benefit from broad collective input. At the same time, there should
+        always be a way to contact the organisers of a poll in matters of
+        moderation or other logistical matters. An option for organisers to
+        remain anonymous on the 'public' face of the poll, while their names
+        are visible to platform maintainers might be a compromise. This would
+        be soft-anonymity; trust that the platform maintainers do not share
+        the names under reasonable conditions would be required.
+
+        An institutional poll should require the following elements
+        <ul>
+          <li>A clear title for the stem.tudelft.nl listing</li>
+          <li>A description of the observed probem</li>
+          <li>A decription of the proposed action</li>
+          <li>An <b>explicit</b> description of what a vote is for (the 'vote-action')</li>
+        </ul>
+
+        These fields shoud be <b>immutable elements</b>; they cannot be changed
+        during the runtime of the poll. This way, a long-running poll can
+        develop, while those that have cast their vote, can still trust that their
+        vote is not 'repurposed' from something after they have cast it.
+
+        <p>
+          Some changes to the poll to reflect a developing situation should still
+          be possible. See 'poll lifecycle' below.
+        </p>
+
+        <p>
+          At creation time, each poll shall be assigned a unique ID that will also be used in the URL. For,
+          example 'stem.tudelft.nl/poll/dcfe42d4'
+        </p>
+
+        <h3>Voting Process</h3>
+
+        The default position should be that any member of the TU Delft (student,
+        researcher, support staff) can vote on a poll. For some applications,
+        restricting input to a subset may be appropriate.
+
+        Simple filtering could be of type:
+        <ul>
+          <li>Restricting only to employees</li>
+          <li>Restricting to specific faculties or university services</li>
+        </ul>
+
+        Excessively narrow scopes for voting eligiblity should be restricted.
+
+        <p>
+          Polls that one is not eligible to vote for should still show up on the
+          stem.tudelft.nl frontpage, but should end up below eligible and
+          restricted polls and should be clearly indicated. This is to maintain
+          a transparent platform and build trust in the platform.
+        </p>
+
+        <p>
+          Casting a vote on the same project can only be done once, and a separate
+          page (or page filter) on stem.tudelft.nl should quickly show you
+          the polls you voted in, what you voted, and when you voted. Given
+          the lifecycle of a poll, this page could also show how many updates
+          have occured to the poll since someone voted in the poll. This would
+          encourage participation in the poll and make the process more engaging.
+        </p>
+
+        <p> When voting for a project, the default behaviour will be to receive emails
+          about poll updates. The user does not need to enter an email (as their TU
+          mailbox can be used), but should be given the option to opt-out of update
+          emails.</p>
+
+        <p>The vote cast by a user is anonymous by default. Ideally, there should
+          be no way for the system administrators to recover this information, but
+          it might be an acceptable compromise to use a system that relies on trust
+          where the system administrators could, in principle, get a list of who
+          voted and in what way, but never share this with any levels of management.
+        </p>
+
+        <p>
+          The platform should allow the users to retract their vote at any time as long as
+          the poll is active. When the poll is closed, those that have voted
+          in the poll should receive an email notification, and if the user has
+          placed their vote before the latest poll update (see 'poll lifecycle'),
+          they will still have (e.g.) 7 days to retract or change their vote.
+        </p>
+
+        <h3>Moderation</h3>
+
+        If any member, or group of members a the TU Delft can create an institutional
+        poll, then there will be the need for moderation options. Both for
+        polls that explicitly violate the code of conduct or otherwise
+        violate 'good conduct'. (e.g. threats, discrimination). On top of misconduct,
+        duplicate entries, or non-malicious misuse of the platform would also
+        need to be moderated.
+
+        <p>
+          The nature of moderation is, in general, a tricky matter. We propose
+          the following aspects to aid in moderation.
+        </p>
+
+        <ol>
+          <li>Each poll should come with a report button. Reports are by default anonymous and would alert the platform
+            maintainers.</li>
+          <li>If a poll is deemed unsuitable for the platform, it will receive the status 'restricted' and editing of
+            any of the polls' content is made restricted. Voting is also paused and hidden from the internally visible
+            listing. A change to 'restricted' must be accompanied with an explicit message explaining the motivation for
+            the status change.</li>
+          <li>Restricted polls are listed at the bottom of the active polls list.</li>
+          <li>Creator(s) of a restricted poll can still see the (locked) voting tally.</li>
+        </ol>
+
+        This set of conditions will enable moderation, but should also provide
+        a way in which creators and participants of polls will know that their
+        polls cannot vanish without a trace.
+
+        <h3>Poll Lifecycle</h3>
+
+        On top of the immutable poll fields, a poll will have various lifecycle
+        stages. During the active runtime of the projects, organisers should
+        be able to add updates to the project. These updates should be clearly
+        indicated as such, and should be separate from the original, immutable,
+        poll elements. These updates could be calls to actions, invitations to
+        discussion meetings, or relevant updates regarding activity or decisions
+        that have taken place at the TU delft.
+
+        For an 'active' poll, the poll can change state to the following:
+        <ul>
+          <li>Closed/Complete (set by the organisers)</li>
+          <li>Retracted (set by the organisers)</li>
+          <li>Restricted (set by moderators)</li>
+        </ul>
+
+        <p>
+          In all cases, there is still a visible record of the poll in the
+          system, and URL links to the poll should still resolve to an item.
+          Closed/complete polls should no longer allow active voting on the poll,
+          but should otherwise be identical to active polls. A clear indication
+          of the 'closed/complete' status should be visible.
+        </p>
+
+        <p>
+          Organisers of polls have the option to retract polls. This is mostly
+          intended for technical issues or if an old poll is deemed sufficiently
+          misformulated. In most cases, closing an old poll is the preferred
+          option. Retracted polls should only list the title, and (if not
+          anonymous) the organisers.
+        </p>
 
 
-              <p>Specifically, we envision an official petition system with thresholds that trigger accountability from the institution.
-              Members of staff could create a &#39;call for deliberation&#39;.
-              This call would be internally visible to TU employees, and employees could endorse it through their TU Delft login credentials.<sup class="footnote-ref"><a id="ref5" aria-label="footnote 1">5,</a></sup><sup class="footnote-ref"><a id="ref6" aria-label="footnote 2">6</a></sup>
-              Such a system would provide a secure way to be heard on broadly relevant topics within the university.
-              Existing committee and reporting systems require large time commitments and enable only a limited number of people to work toward change.
-              A collective participatory process would make it possible for everyone to make themselves heard or amplify the voices of others.</p>
-              <p>A democratized system without any clear, binding commitments does not provide a direct way to hold the institution accountable.
-              Members of staff - especially those who have lost their trust in the institution - are unlikely to engage with even the best system if they think its outcome can be ignored.</p>
-              <p>To ensure that staff can trust the institution to hear their concerns and deliberation, the proposed system should come with clear voting-based triggers.
-              As concrete examples, we propose three thresholds:
-              the first would require the institution to facilitate meetings or lectures on the topic;
-              the second would prompt a university-wide email poll open to all TU Delft employees;
-              the third would require a formal response from the institution within 60 days regarding the feasibility of the proposal.</p>
-              <p>One might argue that the existing consultation bodies already provide a path to achieving similar effects.
-              Yet, as with reporting social safety incidents, the lack of transparency and barriers to participation in matters related to institutional governance leave significant room for improvement.
-              The proposed system would be a clear step towards a more democratic, transparent and participatory institution.</p>
-              
-            </span>
+        <h3>Accountability</h3>
 
-        </document-component>
+        <p>
+          A polling system as described above with no furher action would provide
+          a safer and more direct way to engage with TU Delft matters in a collective
+          way, but it would still be hard to see <i>why</i> one should take the
+          (limited) time out of their day to participate.
+        </p>
 
-        <!-- Nederlands -->
-        <document-component data-lang-el=nl>
-            <span slot="title">Veiligheid, Integriteit en Verplichtingen</span>
-            <!-- <span slot="subtitle"></span> -->
-            <span slot="date">April 2026</span>
-            <!-- <span slot="badge"><endorsement-badge-component datasource="/community/endorsements/open-letter-endorsements.csv"></endorsement-badge-component></span> -->
-            <span slot="body-content">
-              <!-- converted using https://text-html.com/ -->
-               Een Nederlandse vertaling is nog niet beschikbaar voor dit item.
-            </span>  
-            
-        </document-component>
-        <!-- <endorsement-list-component datasource="/community/endorsements/open-letter-endorsements.csv"></endorsement-list-component> -->
-    </div>
-    <footer-component></footer-component>
-  </body>
+        <p>
+          Rather than relying on additional work by the poll organisers in trying
+          to find a listening ear, a certain number of votes could automatically
+          trigger actions. This has two effects: (1) The system becomes an
+          actual driver of change, as more participation is guaranteed to result
+          in some action and (2) the system has a clear reason for TU Delft members
+          to participate: if you vote, there is a clear path to action.
+        </p>
+
+        <p>
+          Pre-defined triggers based on the number or fraction of eligible voters
+          parttaking in an institutional poll can gradually encourage further
+          participation or drive engagement with the organisation.
+        </p>
+
+        <p> We will propose some example triggers below. The exact threshold or nature
+          of the triggers would require fine-tuning. Your input on this matter is
+          welcome. Some possible triggers in order of increasing required engagement:
+        <ol>
+          <li>Auto-greenlighting organisation of a meeting on the topic; to provide
+            a space for in-person discussion. This would avoid the difficulty where
+            individual (e.g.) deans need to decide whether they should permit such
+            events.</li>
+          <li>An automatic email sent to all TU Delft members highlighting
+            that a poll is reaching a lot of traction and asking for their participation.
+            This both encourages democratisation and participation in that specific poll,
+            but also serves as a mechanism to communicate to TU Delft members that they
+            have ways ('medezeggenschap') in this instituion.</li>
+          <li>A formal response
+            from the institution or relevant management structure within (e.g.) 60 days
+            regarding the current state or outcome of the poll. In this response, the
+            institution would have to engage with the content of the poll, rather than just
+            acknowledging its existence.</li>
+        </ol>
+        </p>
+
+        <p>Regardless of which of these triggers could be agreed to by the instition,
+          the existence of an institutional polling system would already provide a
+          'soft' power to those looking to have 'medezeggenschap'. Even if you still have 
+          to ask any level of management for permission for the organisation of a 
+          discussion meeting - having (e.g.) 100 verifiable TU Delft votes will 
+          help you in your case. Even if no automatic email is sent to all TU 
+          Delft employees, you can still directly email your colleagues a safe TU Delft-managed
+          domain where they can securely and anonymously be heard. Even if the
+          institution will not commit itself to respond  automatically to
+          a large group of responses; those that organise around the poll topic
+          can show that their cause is important to the members of the TU Delft.
+        </p>
+
+        <p>Critically, what this system provides regardless of triggers, is a way
+          to have a collective voice. The institution can use delay tactics or ignore small groups
+        of employees indefinitely - but cannot do so for a large collective call.</p>
+
+        <h3>Communication</h3>
+
+        <p>
+          In principle, the institutional polling system is internal for TU Delft
+          employees and students. It may be desirable in some cases to take the
+          discussion outside this scope and include other partners. This may be
+          in cases where a question that is also receiving broad consideration in
+          broader society may be considered. This may involve matters of
+          integrity, who we work with, or what societal matters the TU Delft
+          priortises.
+        </p>
+
+        If required, a dislaimer message on the polling page could remind users
+        that the polling is an internal TU Delft matter.
+
+        <p>
+          If deemed that communication of the poll results is important with a
+          broader audience outside the TU Delft, this would likely be best left
+          to the media office or Delta.
+        </p>
+
+        <p>Members of the TU Delft should feel free to create, engage with and vote in
+          institutional polls. That requires communication in online spaces, but also on
+          campus. Within the TU Delft and TU Delft campus, discussion of institutional
+          polls should always be possible, especially when not of 'restricted' state.
+          That means that promotional material asking for participation in a poll,
+          discussion meetings or bringing up the polls in meetings should -in principle-
+          be desirable. This would reflect a broader commitment to democratisation.</p>
+
+      </span>
+
+    </document-component>
+
+    <!-- Nederlands -->
+    <document-component data-lang-el=nl>
+      <span slot="title">Veiligheid, Integriteit en Verplichtingen</span>
+      <!-- <span slot="subtitle"></span> -->
+      <span slot="date">April 2026</span>
+      <!-- <span slot="badge"><endorsement-badge-component datasource="/community/endorsements/open-letter-endorsements.csv"></endorsement-badge-component></span> -->
+      <span slot="body-content">
+        <!-- converted using https://text-html.com/ -->
+        Een Nederlandse vertaling is nog niet beschikbaar voor dit item.
+      </span>
+
+    </document-component>
+    <!-- <endorsement-list-component datasource="/community/endorsements/open-letter-endorsements.csv"></endorsement-list-component> -->
+  </div>
+  <footer-component></footer-component>
+</body>
+
 </html>
