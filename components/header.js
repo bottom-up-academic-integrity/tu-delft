@@ -178,7 +178,7 @@ headerTemplate.innerHTML = `
   </style>
   <div> 
   <div id="banner" class="actionbuttons">
-      <a href=""><div class="icon" style="font-size: 1.5em; -webkit-mask: url(/icons/campaign_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg) no-repeat center;"></div>Active Events Notice</a>
+      <a href="https://www.universitiesforjustice.eu/sign" target="_blank"><div class="icon" style="font-size: 1.5em; -webkit-mask: url(/icons/campaign_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg) no-repeat center;"></div>Support the new Europe-wide Universities for Justice campaign by signing their Open Letter</a>
   </div> 
   <div style="position:relative"> 
   <slot></slot>
@@ -235,7 +235,7 @@ class Header extends HTMLElement {
 
   // check if we should still show the current banner
   checkBannerDate() {
-    const thresholdDate = new Date('2026-04-23'); // Set your date here (+1 day)
+    const thresholdDate = new Date('2026-12-29'); // Set your date here (+1 day)
     const currentDate = new Date();
     console.log(this.shadowRoot.getElementById('banner'))
     if (currentDate < thresholdDate) {
